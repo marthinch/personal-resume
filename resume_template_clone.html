@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Resume</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #111;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: #f5f5f5;
+      transition: background 0.5s ease;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #444;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .section p,
+    .section li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .skills-list,
+    .experience-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-list li,
+    .experience-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #fafafa;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Marthin Silalahi</h1>
+    <p>Software Engineer | .NET + Azure Cloud Solution</p>
+  </header>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a Software Engineer specializing in .NET and Azure, focused on delivering reliable and scalable cloud
+      solutions.
+      I have experience implementing distributed and event-driven systems, and designing practical solutions that
+      balance performance, maintainability, and scalability.
+      I am currently exploring global opportunities that allow me to contribute to impactful projects while growing into
+      technical leadership or solution architect roles, where I can design systems, mentor teams, and drive strategic
+      engineering decisions.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Architectures: Event-Driven, Offline-Online Data Sync, RESTful API, MVVM</li>
+      <li>Backend & Cloud: C# (.NET Framework, .NET Core, .NET), Azure Cloud (App Services, Eventhub, Application
+        Insights, Kubernetes, DevOps), Terraform, CI/CD Pipelines</li>
+      <li>Databases: SQL Server, MySQL, SQLite, Azure Storage (No SQL)</li>
+      <li>Frontend: Javascript, Typescript (Angular), Bootstrap, D3.js</li>
+      <li>Mobile: Xamarin Android, Xamarin Form</li>
+      <li>Practices & Methodologies: Agile/Scrum, DevOps, Code Reviews, Mentoring & Team Leadership</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Experience</h2>
+    <ul class="experience-list">
+      <li><strong>Senior Software Engineer</strong> — Orsted (Sep 2022 - Present)
+        <ul>
+          <li>Reduced licensing cost up to 50% by migrating legacy high-frequency data pipeline applications to scalable
+            cloud based data platforms.</li>
+          <li>Improved high-frequency event-driven uploader performance by 50% for large-scale bulk data processing
+            through
+            architectural optimization.</li>
+          <li>Built PoC for local data persistence, validating migration from catch-up log text files for high-frequency
+            data in OT domain. </li>
+          <li>Designed and delivered adapter solution to collect and process high-frequency data in OT domain.</li>
+          <li>Designed and automated backfill solution to reduce lengthy manual backfill process and decrease
+            daily incident tickets by 50% in OT domain.</li>
+          <li>Led engineers in incident response, proactive monitoring, and root cause analysis, ensuring 24/7 uptime
+            and near-zero data loss. </li>
+          <li>Conducted code review to maintain code quality and logic improvements.</li>
+        </ul>
+      </li>
+      <li><strong>Senior Software Developer</strong> — Petronas Digital Sdn Bhd (Jan 2022 - Aug 2022)
+        <ul>
+          <li>Designed and delivered RESTful API data extraction-modeling solution, extracting data through multiple
+            sources and handling ~10K data volume for interactive dashboard.</li>
+          <li>Partnered with data scientists to embed statistical features, automating data modeling and enabling
+            end-to-end analytics delivery.</li>
+          <li>Led a full-stack development team, allocating tasks by modules, clarifying technical logic and mentoring
+            team members through pair programming. </li>
+          <li>Introduced agile ceremonies (sprint planning, sprint review, sprint retrospective), improving transparency
+            and delivery predictability.</li>
+        </ul>
+      </li>
+      <li><strong>Senior Software Developer</strong> — FPT Software (Nov 2021 - Aug 2022)
+        <ul>
+          <li>Assigned maintenance project, fixing production issues and bugs in the waste management system.</li>
+          <li>Designed and implemented best practice RESTful API solution for backend and reusable components solution
+            for frontend to support software development roadmap for different projects.</li>
+          <li>Assigned to Petronas Digital Sdn Bhd, designing and implementing solutions to automate data analytics
+            modeling.</li>
+        </ul>
+      </li>
+      <li><strong>Software Engineer</strong> — Anacle Systems Limited (Jul 2020 - Oct 2021)
+        <ul>
+          <li>Designed and implemented mobile retail transaction solution for Android & iOS. </li>
+          <li>Migrated client legacy Android & iOS application from webview to Xamarin Form with MVVM architecture.</li>
+          <li>Migrated client legacy service from SOAP to RESTful API, improving security and interoperability.</li>
+          <li>Designed and implemented offline-online data sync solution to sync local data to server automatically.
+          </li>
+        </ul>
+      </li>
+      <li><strong>Software Developer</strong> — Tripcetera (Jun 2018 - Jun 2020)
+        <ul>
+          <li>Designed and delivered RESTful APIs solution for mobile transactions, including third-parties API
+            integration (currency exchange and payment).</li>
+          <li>Designed & delivered cross-platform mobile booking apps (Android & iOS) supporting hotel, activities, car
+            rental and ferry reservation.</li>
+        </ul>
+      </li>
+      <li><strong>Software Developer</strong> — SimpliDOTS (Jun 2016 - Jun 2018)
+        <ul>
+          <li>Designed and delivered RESTful APIs solution for mobile transactions, including third-parties API
+            integration (currency exchange and payment).</li>
+          <li>Designed & delivered cross-platform mobile booking apps (Android & iOS) supporting hotel, activities, car
+            rental and ferry reservation.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Open Source Contributors</h2>
+    <ul class="experience-list">
+      <li>
+        Main contributor of Xamarin Form Custom Component library, providing sample code including documentation and
+        publishing library to NuGet.
+      <li>
+        <a href="https://www.nuget.org/packages/XamarinFormCustomComponent/" target="_blank">NuGet Gallery | XamarinFormCustomComponent 1.0.0 (400+ downloads)</a>
+      </li>
+      <li>
+        <a href="https://www.nuget.org/packages/XamarinFormEmptyStatePage/" target="_blank">NuGet Gallery | XamarinFormEmptyStatePage 1.0.0 (500+ downloads)</a>
+      </li>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:marthinchristianz@gmail.com">marthinchristianz@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/marthin-silalahi/" target="_blank">https://www.linkedin.com/in/marthin-silalahi/</a></p>
+    <p>GitHub: <a href="https://github.com/marthinch" target="_blank">https://github.com/marthinch</a></p>
+  </section>
+
+  <footer>
+    © 2025 Marthin Silalahi — Minimal Resume Template
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+
+</html>
