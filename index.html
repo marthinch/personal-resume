@@ -12,13 +12,26 @@
       background: #ffffff;
       color: #111;
       scroll-behavior: smooth;
+      padding-top: 12%;
     }
 
     header {
-      padding: 60px 20px;
+      padding: 50px 0;
       text-align: center;
       background: #f5f5f5;
       transition: background 0.5s ease;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    header.scrolled {
+      padding: 10px 0;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
     }
 
     header h1 {
@@ -82,9 +95,11 @@
 
 <body>
   <header>
-    <h1>Marthin Silalahi</h1>
-    <p>Software Engineer | CEO of Nothing</p>
-    <p>Building scalable applications, solving complex problems, and occasionally managing the chaos of… nothing.</p>
+    <nav class="container">
+      <h1>Marthin Silalahi</h1>
+      <p>Software Engineer | CEO of Nothing</p>
+      <p>Building scalable applications, solving complex problems, and occasionally managing the chaos of… nothing.</p>
+    </nav>
   </header>
 
   <section class="section">
@@ -256,7 +271,7 @@
   </section>
 
   <footer>
-    © 2025 Marthin Silalahi — Minimal Resume Template
+    © 2025 Marthin Silalahi
   </footer>
 
   <script>
@@ -269,8 +284,16 @@
       });
     }, { threshold: 0.2 });
 
-
     sections.forEach(section => observer.observe(section));
+
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      if (window.scrollY > 20) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
   </script>
 </body>
 
